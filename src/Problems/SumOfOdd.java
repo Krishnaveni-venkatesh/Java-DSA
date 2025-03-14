@@ -1,5 +1,7 @@
 package Problems;
 
+import java.util.Scanner;
+
 public class SumOfOdd {
 
     public static int sumOfOdd(int[] arr){
@@ -18,8 +20,15 @@ public class SumOfOdd {
     }
 
     public static void main(String arg[]){
-        int[] nums = {1,2,3,4,5};
-       int result = sumOfOdd(nums);
-        System.out.println("the sum of odd is "+sumOfOdd(nums));
+
+
+       Scanner input = new Scanner(System.in);
+       System.out.println("Enter the size of the arr");
+       int size = input.nextInt();
+       int[] arr = new int[size];
+       for(int i = 0;i<size;i++){
+           arr[i] = input.nextInt();
+       }
+        System.out.println("the sum of odd is "+sumOfOdd(arr));
     }
 }
