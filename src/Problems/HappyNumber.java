@@ -1,4 +1,7 @@
 package Problems;
+
+import java.util.HashSet;
+
 /*
   PROBLEM STATEMENT
 
@@ -15,14 +18,23 @@ Let's check step-by-step:
  */
 public class HappyNumber {
     public static boolean happynumber(int n) {
-        while (n != 1 && n != 20) {
+        int originalNum = n;
+        HashSet<Integer> seen = new HashSet<>();
+        while (n != 1 && !seen.contains(n)) {
+            seen.add(n);
             n = getSumOfSquares(n);
+
         }
-        return n == 1;
+
+        if(n == 1){
+            return true;
+        }else{
+            return false;
+        }
     }
     public static int getSumOfSquares(int num) {
         int sum = 0;
-        while (num > 0) {
+        while (num != 0) {
             int digit = num % 10;
             sum += digit * digit;
             num /= 10;
@@ -31,7 +43,8 @@ public class HappyNumber {
     }
     public static void main(String[] args) {
         int num = 129;
-        System.out.println(num + " is a happy number "+ happynumber(num));
+       System.out.println(  " is a happy number "+ happynumber(10));
+        System.out.println("jasldkjf");
     }
 }
 
