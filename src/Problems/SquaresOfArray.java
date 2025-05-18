@@ -1,3 +1,6 @@
+//input=[3,4,7,8,9,10]
+//output=[9,16.49,64,81,100] #finding the squares of each array element
+
 package Problems;
 
 import java.util.Arrays;
