@@ -1,8 +1,21 @@
 package Basics;
+import java.util.Scanner;
 
 public class twodarray {
     public static void main(String[] args) {
-        int[][] marks={{98, 97,80},{78,89,90}};//2d array
-        System.out.println(marks[1][0]);
+        Scanner sc=new Scanner(System.in);
+        int[][] arr=new int[3][3];//2d array
+        for(int row =0;row<arr.length;row++) {
+            for (int col = 0; col < arr[row].length; col++) {
+                arr[row][col] = sc.nextInt();
+            }
+        }
+        for(int row =0;row<arr.length;row++){
+            for(int col=0;col<arr[row].length;col++){
+               System.out.print(arr[row][col]+ " ");
+            }
+            System.out.println( " ");
+        }
+
     }
 }
