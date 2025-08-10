@@ -8,7 +8,7 @@ public class MaxIn2DArray {
     }
 
     public static int[] search(int[][] arr) {
-        int max = arr[0][0];
+        int max = arr[0][0];//or int max=Integer.MIN_VALUE
         int rowIndex = 0;
         int colIndex = 0;
 
@@ -21,6 +21,7 @@ public class MaxIn2DArray {
                 }
             }
         }
-        return new int[]{rowIndex, colIndex};
+        return new int[]{rowIndex, colIndex};//or return max
+
     }
 }
