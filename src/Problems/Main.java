@@ -7,7 +7,7 @@ public class Main {
         String[] words = sentence.split(" ");
         System.out.println(Arrays.toString(words));
         int length = 0;
-        String result = "";
+        String result = " ";
         for (String word : words) {
             if (word.length() > result.length()) {
                 result = word;
