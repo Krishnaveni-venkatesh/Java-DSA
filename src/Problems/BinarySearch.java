@@ -6,7 +6,7 @@ public class BinarySearch {
     static int binarySearch(int[] arr,int target){
         int start =0;
         int end=arr.length-1;
-        while(start<=end){
+        while(start<end){
            // int mid=(start+end)/2; //mid value exceeds the range of int in java
             int mid=start +(end-start)/2;
             if(target<arr[mid]){
