@@ -13,7 +13,7 @@ public class FirstRepeatingElement {
                     set.add(arr[i]);
                 }
             }
-            System.out.println("First Repeating Element:" + firstRepeating);
+            System.out.println(firstRepeating);
         }
     }
 

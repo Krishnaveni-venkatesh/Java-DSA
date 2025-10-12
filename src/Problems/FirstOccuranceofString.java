@@ -1,7 +1,5 @@
 //input:"banana apple banana cherry"
 //checking if the substring exists in it or not and if exists it should give its index from where the substring starts
-
-
 package Problems;
 
 public class FirstOccuranceofString {

@@ -19,9 +19,9 @@ public class AmstrangNumber {
         int number = 153;
 
         if (checkingAmstrang(number)) {
-            System.out.println(number + " is an Armstrong number.");
+            System.out.println(number + " is an Armstrong number");
         } else {
-            System.out.println(number + " is not an Armstrong number.");
+            System.out.println(number + " is not an Armstrong number");
         }
     }
 }
