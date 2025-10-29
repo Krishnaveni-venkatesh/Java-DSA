@@ -13,8 +13,6 @@ Let's check step-by-step:
 68 → (6² + 8²) = 36 + 64 = 100
 100 → (1² + 0² + 0²) = 1
 
-
-
  */
 public class HappyNumber {
     public static boolean happynumber(int n) {

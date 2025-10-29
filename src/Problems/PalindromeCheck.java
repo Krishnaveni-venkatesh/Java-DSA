@@ -1,6 +1,5 @@
 package Problems;
-
- public class PalindromeCheck {
+public class PalindromeCheck {
     public static boolean isPalindrome(String str) {
         int left = 0, right = str.length() - 1;
         while (left < right) {

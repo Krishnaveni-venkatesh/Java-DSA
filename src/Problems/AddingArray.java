@@ -1,6 +1,6 @@
 //input: num=[1,2,0,0] k=[3,4]
 //output:[1,2,3,4]
-//explanation=1200+34=1234
+//explanation=1200+34
 package Problems;
 import java.util.List;
 import java.util.ArrayList;
