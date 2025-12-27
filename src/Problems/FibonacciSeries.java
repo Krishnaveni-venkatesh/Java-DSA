@@ -1,16 +1,18 @@
 package Problems;
 
  public class FibonacciSeries {
-    public static void printFibonacci(int n) {
-        int a = 0, b = 1;
-        System.out.print("Fibonacci Series: " + a + " " + b);
-
-        for (int i = 2; i < n; i++) {
-            int next = a + b;
-            System.out.print(" " + next);
-            a = b;
-            b = next;
+    public static int printFibonacci(int n) {
+        if(n<=1){
+            return n;
         }
+        int a = 0, b = 1, c = 0;
+        for (int i = 2; i <= n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+
+        return c;
     }
 
     public static void main(String[] args) {
