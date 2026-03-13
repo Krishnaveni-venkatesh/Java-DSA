@@ -16,7 +16,19 @@ Let's check step-by-step:
  */
 public class HappyNumber {
     public static boolean happynumber(int n) {
-        int originalNum = n;
+        int num = 19;
+        int sum = 0;
+        while (num > 0) {
+            int digit = num % 10;
+            sum = sum + (digit * digit);
+            num = num / 10;
+            num = sum;
+        }
+        return num == 1;
+    }
+
+
+        /*int originalNum = n;
         HashSet<Integer> seen = new HashSet<>();
         while (n != 1 && !seen.contains(n)) {
             seen.add(n);
@@ -37,13 +49,13 @@ public class HappyNumber {
             sum += digit * digit;
             num /= 10;
         }
-        return sum;
-    }
+        return sum;*/
+//}
     public static void main(String[] args) {
         int num = 129;
-       System.out.println(  " is a happy number "+ happynumber(10));
-        System.out.println("jasldkjf");
-    }
+        System.out.println(" is a happy number " + happynumber(10));
+
+}
 }
 
 

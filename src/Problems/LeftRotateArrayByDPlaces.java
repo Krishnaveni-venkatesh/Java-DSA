@@ -1,0 +1,28 @@
+package Problems;
+import java.util.Arrays;
+
+public class LeftRotateArrayByDPlaces {
+    public static int[] leftRotate(int[] arr,int d){
+       int n=arr.length;
+        d=d%n;
+        int[] temp = new int[d];
+        for (int i = 0; i < d; i++) {
+            temp[i] = arr[i];
+        }
+
+        for (int i = d; i < n; i++) {
+            arr[i - d] = arr[i];
+        }
+
+
+        for (int i = 0; i < d; i++) {
+            arr[n - d + i] = temp[i];
+        }
+        return arr;
+    }
+    public static void main(String[] args){
+        int[] arr={1,2,3,4,5,6,7};
+        int d=3;
+        System.out.println(Arrays.toString(leftRotate(arr,d)));
+    }
+}
